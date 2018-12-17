@@ -1,0 +1,100 @@
+/* body{
+    background-color: #5E4641;
+} */
+.nav{
+    background-color: darkblue;
+}
+.main{
+    background: rgb(53, 52, 52);
+    padding-top: 10px;
+}
+
+.intro{
+    display: flex;
+    margin: 10px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    background-color: chocolate;
+}
+
+.experince{
+    background-color: blue;
+    margin: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.projects{
+    background-color: brown;
+    margin: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.skills{
+    background-color: coral;
+    margin: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.education{
+    background-color: cornflowerblue;
+    margin: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.contact{
+    background-color: crimson;
+    margin: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+footer{
+    background-color: blanchedalmond;
+}
+
+.intro img{
+    border: 5px solid yellow;
+    box-shadow: 5px 10px;
+    border-radius: 50%;
+}
+
+h2{
+    text-align: center;
+}
+/* .line{
+    border-bottom: 5px solid white;
+} */
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+.projects ul{
+    border: 5px 5px 5px 5px;
+    display: flex;
+    list-style-type: none;
+}
+
+.projects ul li img{
+    padding-left: 10%;
+    width: 280px;
+    height: 400px;
+    margin: 5px;
+    border: 5px solid yellow;
+    box-shadow: 5px 10px;
+    border-radius: 5%;
+}
+
+skills ul{
+    display: flex;
+}
