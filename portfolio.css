@@ -1,75 +1,164 @@
-/* body{
-    background-color: #5E4641;
-} */
-.nav{
-    background-color: darkblue;
+:root{
+    --color-primary: rgba(6, 12, 63, 0.753);
 }
-.main{
-    background: rgb(53, 52, 52);
-    padding-top: 10px;
+body{
+    font-family: 'Poppins', sans-serif;
+    background: rgb(45, 223, 143);
+}
+nav{
+    background-color:white;
+    box-shadow: 0 8px 6px -6px #999;
+    z-index: 99;
 }
 
-.intro{
+.nav-link{
+    padding: 8px 12px 8px 12px;
+    /* text-transform: uppercase; */
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    color: #444444;
+}
+
+.active .nav-link{
+    color: var(--color-primary) !important;
+}
+
+section{
+    padding-top: 150px;
+    padding-bottom: 100px;
+    /* border: 1px solid black; */
+}
+
+.intro .col{
     display: flex;
-    margin: 10px;
-    padding-top: 60px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    background-color: chocolate;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
 }
 
-.experince{
-    background-color: blue;
-    margin: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-}
-.projects{
-    background-color: brown;
-    margin: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-}
-.skills{
-    background-color: coral;
-    margin: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-}
-.education{
-    background-color: cornflowerblue;
-    margin: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-}
-.contact{
-    background-color: crimson;
-    margin: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
+.intro .col p{
+    text-align: center;
+    color: #555555;
+    font-weight: 700;
+    font-size: 0.7 rem;
 }
 
-footer{
-    background-color: blanchedalmond;
+.intro .col h2{
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--color-primary);
+}
+
+.intro .col h1{
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #555555;
+}
+
+/* @media(max-width: 768px){
+
+} */
+
+.intro .row{
+    flex-direction: row-reverse;
 }
 
 .intro img{
-    border: 5px solid yellow;
-    box-shadow: 5px 10px;
+    border: 1px solid var(--color-primary);
     border-radius: 50%;
+    width: 300px;
 }
 
-h2{
+.top-line{
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: #444444;
+}
+
+.projects .row{
+    display: flex;
+    justify-content: center;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.card{
+    border: 0;
+    box-shadow: 0 0 2px #888888;
+    max-width: 350px;
+    margin: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card:hover{
+    box-shadow: 0 0 28px #888888;
+}
+
+.card-title{
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 600;
+    margin: 14px 24px 14px 24px;
+}
+.card-img{
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.skills .col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skills img{
+    margin: 24px;
+    width: 100px;
+}
+
+.education{
     text-align: center;
 }
-/* .line{
-    border-bottom: 5px solid white;
-} */
+
+.education img{
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.sub-container{
+    margin-bottom: 50px;
+}
+
+.sub-container h4{
+    line-height: 36px;
+}
+.sub-container h5{
+    font-weight: 300;
+    color: var(--color-primary);
+}
+
+.contact{
+    text-align: center;
+}
+.contact .fa{
+    font-size: 24px !important;
+    margin: 8px;
+}
+
+a{
+    text-decoration: none !important;
+    color: var(--color-primary);
+}
+footer{
+   text-align: center;
+   color: var(--color-primary);
+   background-color: aliceblue;
+   padding-bottom: 20px;
+}
+
 
 .navbar {
     overflow: hidden;
@@ -78,23 +167,3 @@ h2{
     top: 0;
     width: 100%;
   }
-
-.projects ul{
-    border: 5px 5px 5px 5px;
-    display: flex;
-    list-style-type: none;
-}
-
-.projects ul li img{
-    padding-left: 10%;
-    width: 280px;
-    height: 400px;
-    margin: 5px;
-    border: 5px solid yellow;
-    box-shadow: 5px 10px;
-    border-radius: 5%;
-}
-
-skills ul{
-    display: flex;
-}
